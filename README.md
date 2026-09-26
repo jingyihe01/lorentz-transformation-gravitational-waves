@@ -136,29 +136,12 @@ pip install numpy matplotlib
 
 ## Usage
 
-Save the program as:
+Keep the following two files in the same directory:
 
-```text
-lorentz_gw_polarization.py
-```
+- `source.py`
+- `lorentz_boost_demo.ipynb`
 
-Run the numerical demonstration using:
 
-```bash
-python lorentz_gw_polarization.py
-```
-
-The demonstration performs the following steps:
-
-1. Generates <i>h</i><sub>+</sub>(<i>t</i>) and <i>h</i><sub>×</sub>(<i>t</i>) for a circular binary.
-2. Rotates the waveform into the detector polarization basis.
-3. Constructs the three-dimensional tensor <i>H</i><sub>ij</sub>.
-4. Applies the exact Lorentz transformation.
-5. Calculates <i>H</i>′<sub>+</sub>(<i>t</i>′) and <i>H</i>′<sub>×</sub>(<i>t</i>′).
-6. Checks that the transformed tensor remains transverse and traceless.
-7. Produces plots comparing the original and transformed waveforms.
-
-The physical parameters in `run_demo()` are illustrative. They can be replaced with the desired component masses, orbital frequency, luminosity distance, source orientation, and velocity.
 
 ## Numerical Checks
 
